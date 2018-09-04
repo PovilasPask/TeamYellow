@@ -10,12 +10,12 @@ module.exports = {
     let login = browser.page.login();
     login
       .waitForPage()
-      .enterCredentials()
-      .assertCredentials();
+      .enterCredentials(email, password)
+      .assertCredentials(email, password);
   },
   'Make an order': function (browser) {
-    const mainDashboard = browser.page.mainDashboard();
-    const ordersHistory = browser.page.ordersHistory();
+    let mainDashboard = browser.page.mainDashboard();
+    let ordersHistory = browser.page.ordersHistory();
     mainDashboard.waitForPage();
     mainDashboard.orderFirstItem();
     ordersHistory.navigate();

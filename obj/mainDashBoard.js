@@ -12,6 +12,6 @@ const functions = {
     elements: {
         providerName: '.headline.red--text',
         firstMenuItem: '.container.fluid > div:nth-child(1) > div:nth-child(3) > span:nth-child(1) > div:nth-child(1)',
-        confimOrderBtn: "[class='flex pt-1'] .btn__content",
+        confimOrderBtn: "[class='flex pt-1'] .btn__content"
     }
 }

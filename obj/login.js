@@ -1,15 +1,13 @@
-let email = 'gbartrum2f@devbridge.com';
-let password = 'AyBrDdHAsc';
 const functions = {
   waitForPage: function () {
     return this.waitForElementVisible('@headline');
   },
-  enterCredentials: function () {
+  enterCredentials: function (email, password) {
     return this
       .setValue('@emailField', email)
       .setValue('@passwordField', password);
   },
-  assertCredentials: function () {
+  assertCredentials: function (email, password) {
     return this
       .assert.containsText('@emailField', email)
       .assert.containsText('@passwordField', password);
