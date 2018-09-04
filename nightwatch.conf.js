@@ -23,11 +23,7 @@ module.exports = {
   },
   "test_settings": {
     "default": {
-      "launch_url" : "https://"+credentials.user+":"+credentials.password+"@dq508exvr03rj.cloudfront.net/",
-      "screenshots": {
-        "enabled": true,
-        "path": './screenshots'
-      },
+      "launch_url" : "https://lunchapp.azurewebsites.net/login-password",
       "globals": {
         "waitForConditionTimeout": 5000
       },
@@ -36,7 +32,8 @@ module.exports = {
 		    "javascriptEnabled": true
       }
     },
-  }
+  },
+  'page_objects_path' : './obj'
 }
 
 function padLeft (count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
